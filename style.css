@@ -6,3 +6,17 @@ html, body {
 canvas {
   display: block;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 100%; /* Occupano il 100% della larghezza su schermi piccoli */
+}
+
+@media (min-width: 600px) {
+  .item {
+      flex: 1 1 48%; /* Occupano il 48% della larghezza su schermi più grandi */
+  }
+}
